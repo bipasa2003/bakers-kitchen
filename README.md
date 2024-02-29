@@ -19,6 +19,8 @@ Welcome to Baker's Kitchen, your one-stop destination for delicious treats deliv
 - **Backend:** PHP, MySQL
 - **Frameworks/Libraries:** Bootstrap, jQuery
 - **Others:** Git, GitHub
+- ![40761](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/02b2f755-3806-45ea-b907-6ab96330fd56)
+
 
 ## Getting Started
 
