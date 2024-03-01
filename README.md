@@ -73,6 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ![Screenshot 2024-03-02 at 01-26-59 https __bipasa2003 github io](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/17607561-bd2e-467d-a4f0-a7a5574e3dbf)
 ![Screenshot 2024-03-02 at 01-28-00 https __bipasa2003 github io](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/1b039aa6-9d86-4d70-bcec-b886faad6568)
 ![Screenshot 2024-03-02 at 01-29-00 https __bipasa2003 github io](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/8717003b-3b7a-422f-a014-39145780e50b)
+![Screenshot 2024-03-02 at 02-00-27 DD Sweet's Bakers](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/f788d227-af08-47d2-9782-669dbd7150d2)
 ![Screenshot 2024-03-02 at 01-28-36 Baker's Kitchen - Order Page](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/c1a9ed70-ac86-4e5e-9eed-dcc2217636f9)
 ![Screenshot 2024-03-02 at 01-28-18 https __bipasa2003 github io](https://github.com/bipasa2003/bakers-kitchen/assets/146659996/025c26fc-51af-46cf-8c9c-f2bbae1f432b)
 
