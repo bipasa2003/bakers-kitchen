@@ -40,16 +40,25 @@ Thank you to all ! 🙌
 <!-- Contributors List -->
 <table>
   <tr>
+     <td align="center">
+      <a href="https://github.com/sankalpa-dot">
+        <img src="https://avatars.githubusercontent.com/bipasa2003" width="100px;" alt="@sankalpa-dot"/><br />
+        <sub><b>SANKALPA SOVAN SAMAL</b></sub><br />
+        <sub>Designer</sub>
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/bipasa2003">
         <img src="https://avatars.githubusercontent.com/bipasa2003" width="100px;" alt="@bipasa2003"/><br />
-        <sub><b>BIPASA NAIK</b></sub>
+        <sub><b>BIPASA NAIK</b></sub><br />
+        <sub>Frontend Developer</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Lipsa-pradhan">
         <img src="https://avatars.githubusercontent.com/Lipsa-pradhan" width="100px;" alt="@Lipsa-pradhan"/><br />
-        <sub><b>LIPSA PRADHAN</b></sub>
+        <sub><b>LIPSA PRADHAN</b></sub><br />
+        <sub>Backend Developer</sub>
       </a>
     </td>
   </tr>
