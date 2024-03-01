@@ -54,8 +54,8 @@ Thank you to all ! 🙌
     </td>
   </tr>
 </table>
-## License
 
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Site Preview
