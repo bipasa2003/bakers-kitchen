@@ -35,7 +35,7 @@ To get started with Baker's Kitchen, follow these steps:
 ## Contributing
 # Contributors
 
-Thank you to all the contributors who have helped make this project better! 🙌
+Thank you to all ! 🙌
 
 <!-- Contributors List -->
 <table>
