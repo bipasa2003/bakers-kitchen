@@ -102,7 +102,7 @@
 
 <div class="container">
     <h1>Place Your Order</h1>
-    <form id="orderForm" action="https://script.google.com/macros/s/AKfycbzABmqqtBEpqRNk75LwU8RvqUosVIlt_OImrk3gq2I1sei_DuR-jo5KuaQkgbB73cEt/exec" method="post">
+    <form id="orderForm" action="https://script.google.com/macros/s/AKfycbxXaq152Ose3ZaddxYa2QGSPwLKe3IMh8nR-oSH1uVeY0FTSmbu1GSa31_dcyUdNKtS/exec" method="post">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -134,7 +134,7 @@
 <script>
 // Function to send form data to Google Sheets and display thank you pop-up
 function submitFormData(formData) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzABmqqtBEpqRNk75LwU8RvqUosVIlt_OImrk3gq2I1sei_DuR-jo5KuaQkgbB73cEt/exec'; // Replace with your Google Apps Script URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXaq152Ose3ZaddxYa2QGSPwLKe3IMh8nR-oSH1uVeY0FTSmbu1GSa31_dcyUdNKtS/exec'; // Replace with your Google Apps Script URL
     const form = document.forms['orderForm'];
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
