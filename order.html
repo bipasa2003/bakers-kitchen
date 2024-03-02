@@ -130,19 +130,31 @@
     <h2>Thank You for Your Order!</h2>
     <p>Your order has been successfully placed. We will contact you shortly.</p>
 </div>
+
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzABmqqtBEpqRNk75LwU8RvqUosVIlt_OImrk3gq2I1sei_DuR-jo5KuaQkgbB73cEt/exec'
+// Function to send form data to Google Sheets and display thank you pop-up
+function submitFormData(formData) {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzABmqqtBEpqRNk75LwU8RvqUosVIlt_OImrk3gq2I1sei_DuR-jo5KuaQkgbB73cEt/exec'; // Replace with your Google Apps Script URL
+    const form = document.forms['orderForm'];
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            console.log('Success!', response);
+            // Display thank you pop-up
+            document.getElementById('thankYouPopup').style.display = 'block';
+        })
+        .catch(error => console.error('Error!', error.message));
+}
 
-const form = document.forms['contact-form']
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! your form is submitted successfully." ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-})
-    
+// Event listener for form submission
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('orderForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        const formData = new FormData(form);
+        submitFormData(formData);
+        form.reset(); // Optional: Clear the form fields after submission
+    });
+}); 
 </script>
 
 </body>
