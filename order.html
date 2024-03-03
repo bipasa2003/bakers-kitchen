@@ -320,13 +320,13 @@
     <label for="product">Select Product:</label>
 
     <select id="product" onchange="updatePrice()">
-      <option value="product1" data-price="0">BAKERY</option>
+     <option value="" disabled selected>BAKERY</option>
       <option value="product2" data-price="200.00"> love cake</option>
       <option value="product3" data-price="729.00">valentine Cake</option>
     </select>
 
     <select id="product" onchange="updatePrice()">
-      <option value="product1" data-price="0">SWEET BAKERY</option>
+      <option value="" disabled selected>SWEET BAKERY </option>
       <option value="product2" data-price="200.00"> love cake</option>
       <option value="product3" data-price="729.00">valentine Cake</option>
     </select>
@@ -368,34 +368,41 @@
 </div><!-- Yorder -->
 
 <script>
-// Function to update price and subtotal based on selected product and quantity
-function updatePrice() {
-  // Get selected product
-  var selectedProduct = document.getElementById("product").value;
+  // Function to update price and subtotal based on selected product and quantity
+  function updatePrice() {
+    // Enable quantity selection and place order button
+    document.getElementById("quantity").disabled = false;
+    document.querySelector('button[type="button"]').disabled = false;
   
-  // Get price per unit
-  var pricePerUnit = parseFloat(document.getElementById("product").selectedOptions[0].getAttribute("data-price"));
+    // Get selected product
+    var selectedProduct = document.getElementById("product").value;
+    
+    // If no product selected, reset price and subtotal
+    if (selectedProduct === "") {
+      document.getElementById("price").textContent = "";
+      document.getElementById("subtotal").textContent = "";
+      return;
+    }
+    
+    // Get price per unit
+    var pricePerUnit = parseFloat(document.getElementById("product").selectedOptions[0].getAttribute("data-price"));
+    
+    // Get quantity
+    var quantity = parseInt(document.getElementById("quantity").value);
+    
+    // Calculate subtotal
+    var subtotal = pricePerUnit * quantity;
+    
+    // Update price and subtotal display
+    document.getElementById("price").textContent = "₹" + pricePerUnit.toFixed(2);
+    document.getElementById("subtotal").textContent = "₹" + subtotal.toFixed(2);
+  }
   
-  // Get quantity
-  var quantity = parseInt(document.getElementById("quantity").value);
-  
-  // Calculate subtotal
-  var subtotal = pricePerUnit * quantity;
-  
-  // Update price and subtotal display
-  document.getElementById("price").textContent = "₹" + pricePerUnit.toFixed(2);
-  document.getElementById("subtotal").textContent = "₹" + subtotal.toFixed(2);
-}
-
-// Function to place order (dummy function for demonstration)
-function placeOrder() {
-  alert("Order placed Successfully!");
-}
-</script>
-
-</body>
-</html>
-
+  // Function to place order (dummy function for demonstration)
+  function placeOrder() {
+    alert("Order placed!");
+  }
+  </script>
   
 </body>
 </html>
