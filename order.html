@@ -407,6 +407,43 @@
   <button type="button" onclick="placeOrder()">Place Order</button>
 </div><!-- Yorder -->
 
+<script>
+  // Function to update price and subtotal based on selected product and quantity
+  function updatePrice() {
+    // Enable quantity selection and place order button
+    document.getElementById("quantity").disabled = false;
+    document.querySelector('button[type="button"]').disabled = false;
+  
+    // Get selected product
+    var selectedProduct = document.getElementById("product").value;
+    
+    // If no product selected, reset price and subtotal
+    if (selectedProduct === "") {
+      document.getElementById("price").textContent = "";
+      document.getElementById("subtotal").textContent = "";
+      return;
+    }
+    
+    // Get price per unit
+    var pricePerUnit = parseFloat(document.getElementById("product").selectedOptions[0].getAttribute("data-price"));
+    
+    // Get quantity
+    var quantity = parseInt(document.getElementById("quantity").value);
+    
+    // Calculate subtotal
+    var subtotal = pricePerUnit * quantity;
+    
+    // Update price and subtotal display
+    document.getElementById("price").textContent = "₹" + pricePerUnit.toFixed(2);
+    document.getElementById("subtotal").textContent = "₹" + subtotal.toFixed(2);
+  }
+  
+  // Function to place order (dummy function for demonstration)
+  function placeOrder() {
+    alert("Thank you! your order is placed successfully.");
+  }
+  </script>
+
   <script>
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxEURy2ly7SeecgRZCD-v5QuTejA_uRQN3wezT9v0qFdcTM__V1upWZGQw0ZTneXRF6/exec'
 
