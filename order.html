@@ -443,20 +443,6 @@
     alert("Thank you! your order is placed successfully.");
   }
   </script>
-
-  <script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxEURy2ly7SeecgRZCD-v5QuTejA_uRQN3wezT9v0qFdcTM__V1upWZGQw0ZTneXRF6/exec'
-
-const form = document.forms['order data']
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! your order is placed successfully." ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-})
-  </script>
   
 </body>
 </html>
