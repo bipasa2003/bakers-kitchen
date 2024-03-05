@@ -14,7 +14,7 @@
             <h2>Product Order Form</h2>
         </div>
       <div class="d-flex">
-        <form action="" method="">
+        <form action="https://script.google.com/macros/s/AKfycbxjUOeGSX3DqeYtD1cF_KcPfNDJaPANoOQ-_Htyce8y_Cp9lfHIeiVN_-DWQE9daNxz/exec" method="post">
           <label>
             <span class="fname">First Name <span class="required">*</span></span>
             <input type="text" name="fname">
@@ -291,7 +291,7 @@
             <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
           </label>
           <label>
-            <span>Town / City <span class="required">*</span></span>
+            <span> Town/City <span class="required">*</span></span>
             <input type="text" name="city"> 
           </label>
           <label>
@@ -442,6 +442,20 @@
   function placeOrder() {
     alert("Order placed!");
   }
+  </script>
+
+  <script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxjUOeGSX3DqeYtD1cF_KcPfNDJaPANoOQ-_Htyce8y_Cp9lfHIeiVN_-DWQE9daNxz/exec'
+
+const form = document.forms['order data']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your order is placed successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
   </script>
   
 </body>
