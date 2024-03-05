@@ -12,6 +12,7 @@ Welcome to Baker's Kitchen, your one-stop destination for delicious treats deliv
 - **Interactive UI:** Intuitive user interface with smooth animations and transitions for enhanced user experience.
 - **Order Tracking:** Track the status of your orders in real-time and receive notifications on delivery updates.
 - **Feedback:** Provide feedback and ratings for your orders to help us improve our services.
+  
 
 ## Technologies Used
 
